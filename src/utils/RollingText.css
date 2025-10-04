@@ -1,0 +1,29 @@
+.rolling-text-container {
+    position: relative;
+    display: inline-block;
+    color:red;
+    overflow-y: hidden;
+    vertical-align: top;
+top: -0.1em;
+}
+
+.rolling-text-entry {
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    font-style: italic;
+}
+
+.rolling-text-entry.inactive{
+    display: none;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.rolling-text-entry.active {
+    display: inline-block;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 2s;
+}
