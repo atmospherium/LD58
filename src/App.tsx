@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>Victors</h1>
+      <h1>Victors?</h1>
       <RunScene scene={story} />
     </>
   );
