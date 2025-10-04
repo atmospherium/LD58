@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
-import {story } from "./story";
+import { story } from "./story";
+import { SlotTextWords } from "@basatmaqsood/react-slot";
+import { RollingText } from "./utils/RollingText";
+import { RunScene } from "./RunScene";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    {story.map((entry)=>{
-      return <p>{entry}</p>
-    })}
+      <h1>Victors</h1>
+      <RunScene scene={story} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

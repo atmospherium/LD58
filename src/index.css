@@ -4,8 +4,14 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(10, 5, 5);
+  background-color: #fde7e7;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    rgba(235, 221, 94, 0.6),
+    rgba(133, 103, 216, 0.6),
+    rgba(73, 2, 2, 0.849)
+  );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,14 +31,20 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 8em;
   line-height: 1.1;
+  font-family: 'Brush Script MT', cursive;
+  color: #8b0000;
+   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+p {
+  font-weight: 200;
 }
 
 button {
